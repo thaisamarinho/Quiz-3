@@ -1,0 +1,7 @@
+<h1>User Ideas</h1>
+<hr>
+
+<% @user.ideas.each do |i|%>
+  <h2><%=link_to i.title, idea_path(i) %></h2>
+  <hr>
+<%end%>
